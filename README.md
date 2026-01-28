@@ -1,6 +1,8 @@
 # Leashy - Tools for Jerk Free Photography
 Leashy is a _useful_ phone retention system that is designed to quickly slip over your phone (and it's case) and tether it to your person.
 
+![Wireframe Render](images/wireframe.png)
+
 > Note We're still in the design phase, and are actively building phone gauges and soliciting measurements.
 
 ## How it works
