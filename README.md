@@ -36,7 +36,7 @@ Leashy is a 3D printed frame (and optional grip) that allows you to easily loop 
 - If you don't see the model you require, don't hesitate to ask.
 
 ### Types of Leashy
-Right now we offer three models [base](types/base/) intended for remixing, [dslr](types/dslr/) which mimics a DSLR grip in an ambidexterous way. and `minimal`. DSLR is intended to mimic the side grip of a mid-size mirror-less camera in an ambidextrous way.  Basic is simply the absolute minimum required to retain the phone.
+Right now we offer three models [base](types/base/) intended for remixing, [dslr](types/dslr/) which mimics a DSLR grip in an ambidextrous way. and [simple](types/simple/) a variant of base with some finishing touches added.
 
 ## Gauges and Sizes
 Your phone's size is probably well known, but a lot of other things aren't... like case size and fitment, printer parameters, slicer settings, etc.
