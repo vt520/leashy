@@ -1,60 +1,101 @@
 # Leashy - Tools for Jerk Free Photography
 Leashy is a _useful_ phone retention system that is designed to quickly slip over your phone (and it's case) and tether it to your person.
 
-![Wireframe Render](images/wireframe.png)
+![Wireframe Render][wireframe-dslr-model]
 
 > Note We're still in the design phase, and are actively building phone gauges and soliciting measurements.
 
 ## How it works
-Leashy is a 3D printed frame (and optional grip) that allows you to easily loop a retaining cord around your phone; holding it in such a way that the loop will not slip off or release when sharply tugged.
+Leashy is a set of easy printing 3D printed yokes for easily looping a retaining cord around your phone with it's case on; holding it with a [friction hitch][friction-hitch] so that the phone cannot slip from the loop when sharply tugged, but is easily released with gentle force.
 
-## Using your Leashy
-- Setting Up
-  - Insert your phone (case on) with the Camera side furthest from the base and the screen facing the access cutout.
-  - Loop the retaining cord over the top of the phone so that the forward side of the cord is on away from the camera.
-  - Snug the friction knot at the base of your Leashy until the retaining cord is as tight as possible.
-  - Optionally add a stopper bead or tie a stop knot
-- Taking Off
-  - Remove the stopper bead or stop knot if present
-  - Gently pull at the release line until there is enough slack to remove your phone.
+## Making a Leashy
 
-## Selecting your Leashy
-- Browse the types of Leashy available in the [types](types/) directory.
-- Determine the `gauge size` of your phone and case combination using the tools in the [gauges](gauges/) directory.
-- Compatible models can be found in the [models](models/) directory in a subdirectory corresponding to your `gauge size`. 
-- If you cannot locate your exact gauge size, you can
-  - Try closet _larger_ gauge size directory, with preference given to the smaller gauge tightness.
-  - Message the maintainers and we will gladly add new models for you.
-- Leashy Models are named as
-  - `{model type}_{gauge size}_{special letters}` ex: `dslr_948-7550_t.stl` or `minimal_1010-8011_mg.stl`
-    - Special letters
-      - `m` average phone height (&gt;125mm and &#x22DC; 150mm)
-      - `s` short phone height (&#x22DC; 125mm)
-      - `l` long phone height (&gt;150mm)
-      - `n` normal orientation
-      - `g` reversed (goofy)
-- If you don't see the model you require, don't hesitate to ask.
+### Required Materials
 
-### Types of Leashy
-Right now we offer three models [base](types/base/) intended for remixing, [dslr](types/dslr/) which mimics a DSLR grip in an ambidextrous way. and [simple](types/simple/) a variant of base with some finishing touches added.
+- Access to a 3D Printer
+- Approximately 20g of PLA Filament, 
+- 48 inches (1.225m) 160lb paracord
 
-## Gauges and Sizes
-Your phone's size is probably well known, but a lot of other things aren't... like case size and fitment, printer parameters, slicer settings, etc.
+### Recommended Tools
 
-The gauge size is a measurement that allows a person to easily obtain a set of _magic numbers_ that _just work_ as long as they are printed by the same printer with the same settings as will be used for the Leashy.
+- Calipers
+- Square
 
-### Finding your Gauge Set
-Gauges may be found under the [gauges](gauges/) directory, and are further divided into two types [simple gauges](gauges/simple/) intended for measuring phones that do not have obtainable specifications, and [combination gauges](gauges/combination/) built to measure a known phone model.  If you cannot find a combination gauge set but can provide measurements, the maintainers will gladly add it for you.  The simple set of gauges are intended for advanced use.
+### Determine your Case Size
 
-Combination gauges are organized into subdirectories by brand, model, and (optionally) year, for example [gauges/combination/iphone/17 pro max](gauges/combination/iphone/17%20pro%20max/) contains the combination gauges to measure your **iPhone 17 Pro Max** and it's case.
+- Check the [Case Files][case-files] to see if the community has already measured your case
+- Use a pair of calipers to carefully measure the width and depth (two smallest dimensions) of your phone case
 
-### Using a Combination Gauge
-A combination gauge will have three important pieces of information: the small measurement label, a set name in brackets, and the large measurement label.
+### Getting the Model
 
-The measurement label contains two parts separated by a '/'; The base number on the left, and the increment number on the right.
+If you found your Case in the [Case Files][case-files], and your printer is well adjusted, use the community tested models first.
 
-A gauge measurement can be read by placing the phone and case into the gauge, with the flat side of the gauge opening being adjacent and parallel to the case, noting which step blocks the phone from reaching the bottom.  If no steps block the phone and case then the gauge number for that measurement is simply the base number.  For each step between the phone and the baseline add the increment number to the base.
+Otherwise if the recommended files do not work for you, or if your case isn't currently available, you can [Export][onshape-export] a model directly from OnShape by following the instructions given for your desired [type](types/) of Leashy.
 
-For example, if I insert my 2024 Stylus and case into the 1250/100 gauge, it stops on the second step from the bottom, the gauge number would be 1450 (1250 + 2*100)
+### Slicing your Model
 
-Each Combination set has 4 or 8 gauges of in steps of 25 gauge units; and you should use the gauge measurement that most snugly (without squeezing) fits your phone and case
+We recommend slicing your Leashy using the following settings:
+
+- .4mm Nozzle Diameter
+- 3 Solid Layers
+- 0.5mm minimum shell thickness
+- 2 Vertical Shells
+- Support on Build Plate Only
+- 50% Cubic Infill
+
+### Threading and Tying
+
+Thread the paracord through your Leashy yoke so that the free ends exit through the knot relief area.
+
+Select one free end, and use it to tie a [Zip Tie Knot][friction-hitch] around the other free end so that it will lay inside the knot relief.
+
+Insert your phone into the yoke, and loop the cord tightly over, tidying your [Friction Hitch][friction-hitch] until it is fully tightened.
+
+Using the other free end, tie a [bowline][bowline] or similar fixed loop that can slip snugly over your hand, yet loosely on your wrist, with a short (1 to 3in, 2.5 to 7.5cm) between the loop and the hitch.
+
+### Loosening your Leashy
+
+To remove your phone, pull the outside line that exits from the yoke opposite from your wrist loop.  It may resist a little at first, then should slide freely allowing you to unloop the cord from your phone.
+
+## Using a Leashy
+
+### Keep it with you
+
+The best camera is the one you have with you, and the same applied to your accessories.  Leashy is intended to sit in your desk drawer, purse, car, or your key hook next to your front door.
+
+### Inserting and Tightening
+
+Every time you use your Leashy, fully insert your phone into the yoke and tighten the loop over the top of your phone.
+
+Ensure the cord follows the guide channels on the sides of your Leashy yoke so that it will not obstruct your front or back camera.
+
+Place your fixed loop over your hand and around your wrist, then pull the cord fully taut to secure the phone.
+
+You are now ready to begin filming.
+
+### When your phone is grabbed
+
+1. **Do Not Pull Continuously Using The Yoke**<br/>While the friction hitch will resist pulling, it may slip under continued effort.
+2. Resist firmly, then let go of the phone<br/>This will firmly set the friction hitch so the phone will remain in the yoke.
+3. Spread your hand fully, or grab the cord if you are able, and pull using the fixed loop<br/>Pulling using your wrist allows you exert significantly more force retrieving phone.
+4. If you need to be released from your phone, simply allow it to slip over your hand<br/>Sometimes it's not worth winning a prize you don't want.
+
+### Practice makes perfect
+
+Until you are comfortable, you should practice with a friend both tightening and loosening your phone from your Leashy, but also practice resisting having your phone taken and jerking it back.
+
+### Care and maintenance
+
+You should regularly inspect your Leashy to make sure that 
+- It is still solidly constructed (no cracks) 
+- There are pronounced layer lines within the cord guides
+- The friction hitch is neat and well laid within the knot relief
+- The free ends of the cord are &gt; 3cm long
+
+When the friction hitch is messy or when the free ends &lt; 3cm, you should untie and retie both knots.  If the guide channels are smoothed or the yoke is cracked it has worn out and should be replaced.
+
+[wireframe-dslr-model]: images/wireframe.png
+[case-files]: docs/case_files.md
+[onshape-export]: docs/onshape_export.md
+[friction-hitch]: docs/knots.md#friction_hitch
+[bowline]: docs/knots.md#bowline
